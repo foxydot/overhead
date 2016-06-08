@@ -71,11 +71,6 @@ function msdlab_pre_header(){
     }
 }
 
-function msdlab_pre_header_logo(){
-    print '<div class="logo">
-    </div>';
-}
-
 register_nav_menus( array(
     'homepage_top' => 'Homepage Top Menu'
 ) );

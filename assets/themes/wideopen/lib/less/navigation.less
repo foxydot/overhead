@@ -113,14 +113,13 @@ Site Navigation
 
 .nav-primary {
   .customheader(1.4);
-  background: @ltgreen;
+  background: @vltgrey;
   z-index: 800;
   li.menu-item{
     padding: 0 1.6rem;
     a{
       padding: 1.6rem 0 1.3rem;
-      color: @green;
-      border-bottom: 6px solid transparent;
+      color: @black;
       text-transform: uppercase;
     }
     &.first-child{
@@ -130,17 +129,17 @@ Site Navigation
       padding-right: 0;
     }
     .sub-menu{
-      background-color: @ltgreen;
+      background-color: @vltgrey;
       margin-top: 0px;
       li.menu-item{
-        background-color: @ltgreen;
+        background-color: @vltgrey;
         padding: 0 2rem;
         width: 100%;
         position: relative;
         a{
           background-color: transparent;
           border: 0;
-          color: @green;
+          color: @black;
           padding: 1rem 0;
           width: 100%;
         }
@@ -153,9 +152,9 @@ Site Navigation
         border: 0;
       }
       li:hover{
-        background-color: darken(@ltgreen,5%);
+        background-color: darken(@vltgrey,5%);
         &>a{
-          color: @green;
+          color: @black;
           text-decoration: none;
         }
       }
@@ -163,9 +162,8 @@ Site Navigation
   }
   li:hover, li.current-menu-item, li.current-menu-ancestor{
     a, a:hover{
-      color: @green;
+      color: @black;
       text-decoration: none;
-      border-bottom: 6px solid @green;
       }
   }
 }
