@@ -1,7 +1,7 @@
 @import 'lesshat';
 /* Import Fonts
 ------------------------------------------------------------ */
-@import url(//fonts.googleapis.com/css?family=Allura|Raleway:400,200,700);
+@import url(//fonts.googleapis.com/css?family=Nunito:400,300,700);
 
 /* Font Stacks */
 .customserif(@size:1.6) {
@@ -19,23 +19,23 @@
   line-height: 1.625;
 }
 
-.customheader(@size:1.6) {
-  font-family: "Raleway","Trebuchet MS", Calibri, sans-serif;
+.customsansserif(@size:1.6) {
+  font-family: "Nutino","Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
   line-height: 1.625;
 }
-.customsansserif,.customsanserif{
-  .customheader();
-}
 
-.script(@size:8){
-  font-family: "Allura", cursive;
+.customheader(@size:1.6) {
+  font-family: "Nutino","Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
-  line-height: 1;
+  line-height: 1.625;
+}
+.customsanserif(@size:1.6){
+  .customsansserif(@size);
 }
 
 .fontawesome {
@@ -210,7 +210,7 @@
 
 
 /* Buttons */
-.button(@background:@blue,@color:@blue) {
+.button(@background:@red,@color:@red) {
   padding: 6px 24px;
   .customsanserif;
   color: @color;
@@ -229,7 +229,7 @@
   .button();
 }
 
-.button-hover(@background:@blue,@color:@blue) {
+.button-hover(@background:@red,@color:@red) {
   .button(@background,@color);
   background-color: fade(@background,40%);
 }

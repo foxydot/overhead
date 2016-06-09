@@ -13,7 +13,8 @@ add_theme_support( 'genesis-structural-wraps', array(
 'nav',
 'subnav',
 'footer',
-'site-inner'
+'site-inner',
+'footer-widgets',
 ) );
 
 /*** HEADER ***/
@@ -82,7 +83,7 @@ remove_action( 'genesis_entry_footer', 'genesis_post_meta'); //remove the meta (
 remove_action( 'genesis_after_endwhile', 'genesis_prev_next_post_nav' );
 //add_action( 'genesis_after_endwhile', 'msdlab_prev_next_post_nav' );
 /*** FOOTER ***/
-add_theme_support( 'genesis-footer-widgets', 1 ); //adds automatic footer widgets
+add_theme_support( 'genesis-footer-widgets', 4 ); //adds automatic footer widgets
 //add the menu
 //add_action('genesis_before_footer','msdlab_do_footer_menu', 20);
 
@@ -90,6 +91,7 @@ add_action('genesis_before_footer','msdlab_do_footer_widget', 1);
 
 remove_action('genesis_footer','genesis_do_footer'); //replace the footer
 add_action('genesis_footer','msdlab_do_social_footer');//with a msdsocial support one
+add_action('genesis_after_footer','msdlab_post_footer');
 
 /*** HOMEPAGE (BACKEND SUPPORT) ***/
 //add_action('after_setup_theme','msdlab_add_homepage_hero_flex_sidebars'); //creates widget areas for a hero and flexible widget area

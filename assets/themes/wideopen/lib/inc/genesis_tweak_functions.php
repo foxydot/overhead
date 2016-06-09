@@ -216,6 +216,11 @@ function msdlab_add_extra_theme_sidebars(){
     'description' => 'Widgets on the Blog Pages',
     'id' => 'blog'
             ));
+    genesis_register_sidebar(array(
+    'name' => 'Post Footer Sidebar',
+    'description' => 'Widget below everything',
+    'id' => 'post-footer'
+            ));
 }
 
 function msdlab_do_blog_sidebar(){
@@ -442,6 +447,23 @@ function msdlab_do_footer_menu(){
     print '<div id="footer_menu" class="footer-menu"><div class="wrap">'.$footer_menu.'</div></div>';
 }
 
+/**
+ * Add pre-header with social and search
+ */
+function msdlab_post_footer(){
+    print '<div id="post-footer" class="post-footer">
+        <div class="wrap">';
+           do_action('msdlab_post_footer');
+    print '
+        </div>
+    </div>';
+}
+add_action('msdlab_post_footer','msdlab_post_footer_sidebar');
+function msdlab_post_footer_sidebar(){
+    print '<div class="widget-area">';
+    dynamic_sidebar( 'post-footer' );
+    print '</div>';
+}
 /**
  * custom wrapper decider
  */

@@ -28,13 +28,7 @@ function msdlab_do_social_footer(){
     print '<div class="row">';    
     print '<div class="social">'.$copyright.' '.$address.'</div>';
     print '<nav class="footer-menu" itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation">'.$footer_menu.'</nav>';
-    print '<div class="icons"><i class="icon icon-equal-housing"></i><i class="icon fa fa-wheelchair"></i><i class="logo logo-leed"></i><i class="logo logo-lcs">Managed By</i></div>';
     print '</div>';
     //print '<div class="backtotop"><a href="#pre-header"><i class="fa fa-angle-up"></i></a></div>';
 }
 
-add_filter('msdlab_social_icons_output','msdlab_social_icons_output_add_overture');
-function msdlab_social_icons_output_add_overture($output){
-    $output .= '<a href="https://api.caremerge.com/facilities/345/social/lobby/announcements?access_token=55a3e9a7803a7&lobby_type=secure" class="fa" title="Odyssey" target="_blank">O</a>';
-    return $output;
-}

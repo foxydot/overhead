@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
         };
       });
 
-	$('.nav-footer ul.menu>li').after(function(){
+	$('.nav-primary ul.menu>li').after(function(){
 		if(!$(this).hasClass('last-child') && $(this).hasClass('menu-item') && $(this).css('display')!='none'){
 			return '<li class="separator">|</li>';
 		}
