@@ -3,7 +3,7 @@
 /**
  * Place the notification bar
  */
- add_action('genesis_after_header','custom_notification_bar');
+ add_action('genesis_before_footer','custom_notification_bar',-1);
 function custom_notification_bar(){
     global $notification_bar_html;
     print $notification_bar_html;

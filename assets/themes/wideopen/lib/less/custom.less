@@ -4,7 +4,7 @@
     .widget.msd-connected{
       width: 100%;
       .connected-text{
-        .customsansserif(3.6);
+        .customheader(3.6);
         color: @red;
         width: 75%;
         float: left;
@@ -18,8 +18,18 @@
         }
         .button-wrapper{
           display: inline-block;
+          position: relative;
+          top: 0.2em;
           .button{
-            margin: 0;
+            margin: 0 0 0 1em;
+            border-radius: 1.5em;
+            border-color: @medgrey;
+            background-color: fade(@ltgrey,0%);
+            &:hover{
+              border-radius: 1.5em;
+              border-color: @medgrey;
+              background-color: @vltgrey;
+            }
           }
         }
       }
@@ -33,6 +43,16 @@
       }
     }
   }
+}
+
+.notification-bar{
+  z-index: 200;
+  background: @vltgrey;
+  .customheader(3.2);
+  text-align: center;
+  color: @red;
+  padding: 0.5em;
+  p{margin: 0;}
 }
 
 .msd-fa, .msd-icon{

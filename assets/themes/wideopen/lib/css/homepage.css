@@ -1,6 +1,6 @@
 /* Import Fonts
 ------------------------------------------------------------ */
-@import url(//fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Ubuntu:400,300,700,500|Nunito:400,300,700);
 /* Font Stacks */
 .fontawesome {
   font-family: "FontAwesome";
@@ -11,7 +11,7 @@
 /* Buttons */
 .button {
   padding: 6px 24px;
-  font-family: "Nutino", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Nunito", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -30,7 +30,7 @@
 .button:hover,
 .button a:hover {
   padding: 6px 24px;
-  font-family: "Nutino", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Nunito", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
