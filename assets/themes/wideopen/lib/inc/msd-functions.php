@@ -62,6 +62,9 @@ function section_body_class($classes) {
 	global $post;
 	$post_data = get_post(get_topmost_parent($post->ID));
 	$classes[] = 'partition-'.$post_data->post_name;
+    if($post->ID == $post_data->ID){
+        $classes[] = 'landing-level';
+    }
 	return $classes;
 }
 add_filter('body_class','category_body_class');
