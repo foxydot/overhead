@@ -23,7 +23,7 @@
   z-index: 10;
   .section{
     background-repeat: no-repeat;
-    padding: 0;
+    padding: 1em 0;
     position: relative;
     .section-subtitle{
       .customheader(2.4);
@@ -48,14 +48,14 @@
       font-weight: 500;
       color: @dkgrey;
       line-height: 1.25;
-      margin: 0 auto 2rem auto;
+      margin: 0 auto 0.5em auto;
       text-align: center;
     }
     .section-body{
       .wrap{
-        padding: 2rem 0;
+        padding: 0;
         img{}
-        a,a:link,a:visited{
+        a:not(.button),a:link:not(.button),a:visited:not(.button){
           text-decoration: underline;
         }
       }

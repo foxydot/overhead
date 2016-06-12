@@ -252,6 +252,10 @@ function msdlab_ro_layout_logic() {
 function msdlab_maybe_move_title(){
     global $post;
     $template_file = get_post_meta($post->ID,'_wp_page_template',TRUE);
+    if(is_front_page()){
+        remove_action('genesis_entry_header','genesis_do_post_title');
+        return false;
+    }
     if(is_page()){
         //remove_action('genesis_entry_header','genesis_do_post_title'); //move the title out of the content area
         add_action('msdlab_title_area','msdlab_do_section_title');

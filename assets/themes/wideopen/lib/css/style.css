@@ -7997,7 +7997,7 @@ Site Footer
 }
 .sectioned-page-wrapper .section {
   background-repeat: no-repeat;
-  padding: 0;
+  padding: 1em 0;
   position: relative;
 }
 .sectioned-page-wrapper .section .section-subtitle {
@@ -8035,15 +8035,15 @@ Site Footer
   font-weight: 500;
   color: #2B2C2C;
   line-height: 1.25;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 0.5em auto;
   text-align: center;
 }
 .sectioned-page-wrapper .section .section-body .wrap {
-  padding: 2rem 0;
+  padding: 0;
 }
-.sectioned-page-wrapper .section .section-body .wrap a,
-.sectioned-page-wrapper .section .section-body .wrap a:link,
-.sectioned-page-wrapper .section .section-body .wrap a:visited {
+.sectioned-page-wrapper .section .section-body .wrap a:not(.button),
+.sectioned-page-wrapper .section .section-body .wrap a:link:not(.button),
+.sectioned-page-wrapper .section .section-body .wrap a:visited:not(.button) {
   text-decoration: underline;
 }
 .sectioned-page-wrapper .section .section-body:after {
