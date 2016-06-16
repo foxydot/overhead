@@ -7620,6 +7620,9 @@ Site Footer
 .site-header .widget-area .widget.msd-connected .connected-social .social-media {
   float: right;
 }
+.site-header .widget-area .textwidget img.alignright {
+  margin-bottom: 0;
+}
 .notification-bar {
   z-index: 200;
   background: #DAE0E5;

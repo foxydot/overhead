@@ -21,8 +21,8 @@ jQuery(document).ready(function($) {
 
     if($( window ).width() > 480){
         $(".site-header").sticky();
-        $("nav.nav-primary").sticky({topSpacing:220});//140
-        $(".notification-bar").sticky({topSpacing:270});//190
+        $("nav.nav-primary").sticky({topSpacing:196});//140
+        $(".notification-bar").sticky({topSpacing:246});//190
     } else {
         $("nav.nav-primary").sticky({});
     }
