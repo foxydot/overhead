@@ -287,3 +287,29 @@ iframe.borderless{
   border: 0;
   margin: 0 auto;
 }
+.page.fix-it-yourself{
+  .su-spoiler-style-default > .su-spoiler-title{
+    .customheader(1.8);
+    .su-spoiler-icon{
+      line-height: 2.4rem;
+    }
+  }
+  .su-tabs.yesno{
+    background: transparent;
+    .su-tabs-nav{
+      span{
+        background: @red;
+        border-radius: 1em;
+        color: @white;
+        &.last-child{
+          display: none;
+        }
+      }
+    }
+    .su-tabs-panes{
+      .su-tabs-pane{
+        .custombody(1.6);
+      }
+    }
+  }
+}

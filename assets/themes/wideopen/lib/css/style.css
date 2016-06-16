@@ -7867,6 +7867,34 @@ iframe.borderless {
   border: 0;
   margin: 0 auto;
 }
+.page.fix-it-yourself .su-spoiler-style-default > .su-spoiler-title {
+  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.625;
+}
+.page.fix-it-yourself .su-spoiler-style-default > .su-spoiler-title .su-spoiler-icon {
+  line-height: 2.4rem;
+}
+.page.fix-it-yourself .su-tabs.yesno {
+  background: transparent;
+}
+.page.fix-it-yourself .su-tabs.yesno .su-tabs-nav span {
+  background: #E8363A;
+  border-radius: 1em;
+  color: #FFF;
+}
+.page.fix-it-yourself .su-tabs.yesno .su-tabs-nav span.last-child {
+  display: none;
+}
+.page.fix-it-yourself .su-tabs.yesno .su-tabs-panes .su-tabs-pane {
+  font-family: "Lato", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
 .nav-responsive ul,
 .nav-responsive li,
 .nav-responsive li a {
