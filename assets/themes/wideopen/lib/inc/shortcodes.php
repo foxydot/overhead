@@ -105,7 +105,7 @@ function msdlab_icon_shortcodes($atts){
                 $classes[] = $att;
                 break;
             default:
-                $classes[] = 'icon-'.$att;
+                $classes[] = 'ohd-'.$att;
                 break;
         }
     }
