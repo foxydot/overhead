@@ -6395,19 +6395,21 @@ Site Header
   color: #333;
 }
 .site-description {
-  color: #999;
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1;
-  margin-bottom: 0;
+  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.625;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 /* Full width header, no widgets */
 .header-full-width .title-area,
 .header-full-width .site-title {
   /*width: 100%;*/
 }
-.header-image .site-description,
 .header-image .site-title a {
   display: block;
   text-indent: -9999px;
@@ -6423,8 +6425,8 @@ Site Header
   height: 80px;
   background: url(../img/logo.png) no-repeat center left;
   background-size: contain;
-  margin: 10px 0;
-  margin: 1rem 0;
+  margin: 10px 0 0 0;
+  margin: 1rem 0 0 0;
 }
 /* Widget Area
 --------------------------------------------- */
