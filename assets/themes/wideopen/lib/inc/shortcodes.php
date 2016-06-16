@@ -111,3 +111,19 @@ function msdlab_icon_shortcodes($atts){
     }
     return '<i class="'.implode(" ",$classes).'"></i>';
 }
+add_shortcode('iframe','msdlab_create_iframe');
+function msdlab_create_iframe($atts){
+    extract( shortcode_atts( array(
+    'url' => false,
+    'height' => '',
+    'width' => '',
+    'border' => false
+    ), $atts ) );
+    if($url){
+        //is it valid?
+        if(!preg_match('%^(?:(?:https?|ftp)://)(?:\S+(?::\S*)?@|\d{1,3}(?:\.\d{1,3}){3}|(?:(?:[a-z\d\x{00a1}-\x{ffff}]+-?)*[a-z\d\x{00a1}-\x{ffff}]+)(?:\.(?:[a-z\d\x{00a1}-\x{ffff}]+-?)*[a-z\d\x{00a1}-\x{ffff}]+)*(?:\.[a-z\x{00a1}-\x{ffff}]{2,6}))(?::\d+)?(?:[^\s]*)?$%iu',$url)){
+            return 'invalid iframe url';
+        }
+        return '<iframe src="'.$url.'" height="'.$height.'" width ="'.$width.'"></iframe>';
+    }
+}
