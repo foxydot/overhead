@@ -1,6 +1,6 @@
 /* Import Fonts
 ------------------------------------------------------------ */
-@import url(//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Ubuntu:400,300,700,500|Nunito:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Open+Sans:300,400,600,700,800|Nunito:400,300,700);
 /* Font Stacks */
 .fontawesome {
   font-family: "FontAwesome";
@@ -68,7 +68,7 @@
   border-radius: 0;
 }
 .post-type-archive-event .panel-group .panel .panel-heading .panel-title a {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 22px;
   font-size: 2.2rem;
@@ -102,7 +102,7 @@
   text-align: center;
 }
 .post-type-archive-event .panel-group .panel .panel-collapse .panel-body article .entry-content .event-date .day {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-size: 3.6rem;
@@ -110,7 +110,7 @@
   line-height: 1;
 }
 .post-type-archive-event .panel-group .panel .panel-collapse .panel-body article .entry-content .event-date .month {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
@@ -119,7 +119,7 @@
   letter-spacing: 0.25rem;
 }
 .post-type-archive-event .panel-group .panel .panel-collapse .panel-body article .entry-content .entry-title {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;

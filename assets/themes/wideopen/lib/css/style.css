@@ -5,7 +5,7 @@ HTML5 Reset
 /* Baseline Normalize
   normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
-@import url(//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Ubuntu:400,300,700,500|Nunito:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Open+Sans:300,400,600,700,800|Nunito:400,300,700);
 article,
 aside,
 details,
@@ -5779,7 +5779,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6356,6 +6356,80 @@ img#wpstats {
   padding: inherit;
   text-align: inherit;
 }
+.connected-social .social-media {
+  margin: 1rem 0;
+  float: none;
+  margin: 0 auto;
+}
+.connected-social .social-media a,
+.connected-social .social-media a:hover {
+  float: none;
+  display: inline-block;
+}
+.connected-social .social-media a:before,
+.connected-social .social-media a:hover:before {
+  opacity: 1;
+}
+.connected-social .social-media a.fa {
+  background: transparent;
+  color: #2B2C2C;
+  font-size: 2rem;
+  height: 2em;
+  line-height: 2;
+  margin: 0;
+  width: 1.5em;
+}
+.connected-social .social-media a.fa.last-child {
+  margin-right: 0;
+}
+.connected-social .social-media a.fa:hover {
+  color: #797A79;
+}
+.connected-social .social-media a.fa-facebook:hover {
+  color: #345AA1;
+}
+.connected-social .social-media a.fa-twitter:hover {
+  color: #348DB9;
+}
+.connected-social .social-media a.fa-pinterest:hover {
+  color: #EC1A22;
+}
+.connected-social .social-media a.fa-google-plus:hover {
+  color: #000000;
+}
+.connected-social .social-media a.fa-linkedin:hover {
+  color: #66B5D3;
+}
+.connected-social .social-media a.fa-instagram:hover {
+  color: #EC1A22;
+}
+.connected-social .social-media a.fa-tumblr:hover {
+  color: #3E5A70;
+}
+.connected-social .social-media a.fa-reddit:hover {
+  color: #FF4400;
+}
+.connected-social .social-media a.fa-flickr:hover {
+  color: #0062DD;
+}
+.connected-social .social-media a.fa-youtube:hover {
+  color: #CC181E;
+}
+.connected-social .social-media a.fa-vimeo-square:hover {
+  color: #232021;
+}
+.connected-social .social-media a.fa-vine:hover {
+  color: #00BE8F;
+}
+.connected-social .social-media a.fa-share-alt:hover {
+  color: #00BF00;
+}
+.connected-social .social-media a.fa-envelope:hover {
+  color: #999999;
+}
+.connected-social .social-media a.fa-rss:hover {
+  color: #F37D2A;
+}
 /*
 Site Header
 ---------------------------------------------------------------------------------------------------- */
@@ -6369,7 +6443,7 @@ Site Header
 --------------------------------------------- */
 .title-area {
   float: left;
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6395,7 +6469,7 @@ Site Header
   color: #333;
 }
 .site-description {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-size: 2rem;
@@ -6450,7 +6524,7 @@ Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 .genesis-nav-menu {
   clear: both;
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6545,7 +6619,7 @@ Site Navigation
 /* Primary Navigation
 --------------------------------------------- */
 .nav-primary {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
@@ -6902,7 +6976,7 @@ article.entry {
   display: block;
 }
 .entry-header .entry-title {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 28px;
   font-size: 2.8rem;
@@ -6915,7 +6989,7 @@ article.entry {
   max-width: 75%;
 }
 .entry-header .entry-subtitle {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 21px;
   font-size: 2.1rem;
@@ -7179,18 +7253,8 @@ Footer Widgets
   padding: 2rem 0;
 }
 .footer-widgets .widget-area {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .footer-widgets .widget-area {
-    float: left;
-    width: 25%;
-  }
+  margin: 0 auto;
+  max-width: 1100px;
 }
 .footer-widgets a {
   color: #FFF;
@@ -7199,11 +7263,35 @@ Footer Widgets
   color: #E3E2E0;
 }
 .footer-widgets .widget {
-  margin: 2rem auto;
-  float: none;
-  clear: both;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: block;
   font-size: 0.8em;
+}
+@media (min-width: 768px) {
+  .footer-widgets .widget {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.footer-widgets .widget:nth-child(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .footer-widgets .widget:nth-child(1) {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.footer-widgets .widget:nth-child(2) {
+  font-size: 0.6em;
 }
 .footer-widgets .search-form input:focus {
   border: 0 solid #ddd;
@@ -7239,13 +7327,63 @@ Footer Widgets
 .footer-widgets .widget.widget_nav_menu ul.menu > li.first-child {
   display: none;
 }
+.footer-widgets .connected-social .social-media a.fa {
+  background: transparent;
+  color: #FFF;
+  opacity: 0.8;
+}
+.footer-widgets .connected-social .social-media a.fa-facebook:hover {
+  color: #345AA1;
+}
+.footer-widgets .connected-social .social-media a.fa-twitter:hover {
+  color: #348DB9;
+}
+.footer-widgets .connected-social .social-media a.fa-pinterest:hover {
+  color: #EC1A22;
+}
+.footer-widgets .connected-social .social-media a.fa-google-plus:hover {
+  color: #000000;
+}
+.footer-widgets .connected-social .social-media a.fa-linkedin:hover {
+  color: #66B5D3;
+}
+.footer-widgets .connected-social .social-media a.fa-instagram:hover {
+  color: #EC1A22;
+}
+.footer-widgets .connected-social .social-media a.fa-tumblr:hover {
+  color: #3E5A70;
+}
+.footer-widgets .connected-social .social-media a.fa-reddit:hover {
+  color: #FF4400;
+}
+.footer-widgets .connected-social .social-media a.fa-flickr:hover {
+  color: #0062DD;
+}
+.footer-widgets .connected-social .social-media a.fa-youtube:hover {
+  color: #CC181E;
+}
+.footer-widgets .connected-social .social-media a.fa-vimeo-square:hover {
+  color: #232021;
+}
+.footer-widgets .connected-social .social-media a.fa-vine:hover {
+  color: #00BE8F;
+}
+.footer-widgets .connected-social .social-media a.fa-share-alt:hover {
+  color: #00BF00;
+}
+.footer-widgets .connected-social .social-media a.fa-envelope:hover {
+  color: #999999;
+}
+.footer-widgets .connected-social .social-media a.fa-rss:hover {
+  color: #F37D2A;
+}
 /*
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
   background-color: #2B2C2C;
   color: #FFF;
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 10px;
   font-size: 1rem;
@@ -7344,7 +7482,7 @@ Site Footer
   position: relative;
 }
 .sectioned-page-wrapper .section .section-subtitle {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
@@ -7359,7 +7497,7 @@ Site Footer
   margin-bottom: 2rem;
 }
 .sectioned-page-wrapper .section h3 {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
@@ -7370,7 +7508,7 @@ Site Footer
   margin-bottom: 0.5em;
 }
 .sectioned-page-wrapper .section .section-title h3 {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 28px;
   font-size: 2.8rem;
@@ -7579,7 +7717,7 @@ Site Footer
   width: 100%;
 }
 .site-header .widget-area .widget.msd-connected .connected-text {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-size: 3.6rem;
@@ -7588,7 +7726,7 @@ Site Footer
   width: 75%;
   float: left;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 .site-header .widget-area .widget.msd-connected .connected-text i {
   color: #000;
@@ -7626,7 +7764,7 @@ Site Footer
 .notification-bar {
   z-index: 200;
   background: #DAE0E5;
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 32px;
   font-size: 3.2rem;
@@ -7663,80 +7801,6 @@ Site Footer
 .msd-fa.circle:before,
 .msd-icon.circle:before {
   border-radius: 50%;
-}
-.connected-social .social-media {
-  margin: 1rem 0;
-  float: none;
-  margin: 0 auto;
-}
-.connected-social .social-media a,
-.connected-social .social-media a:hover {
-  float: none;
-  display: inline-block;
-}
-.connected-social .social-media a:before,
-.connected-social .social-media a:hover:before {
-  opacity: 1;
-}
-.connected-social .social-media a.fa {
-  background: transparent;
-  color: #2B2C2C;
-  font-size: 2rem;
-  height: 2em;
-  line-height: 2;
-  margin: 0;
-  width: 1.5em;
-}
-.connected-social .social-media a.fa.last-child {
-  margin-right: 0;
-}
-.connected-social .social-media a.fa:hover {
-  color: #797A79;
-}
-.connected-social .social-media a.fa-facebook:hover {
-  color: #345AA1;
-}
-.connected-social .social-media a.fa-twitter:hover {
-  color: #348DB9;
-}
-.connected-social .social-media a.fa-pinterest:hover {
-  color: #EC1A22;
-}
-.connected-social .social-media a.fa-google-plus:hover {
-  color: #000000;
-}
-.connected-social .social-media a.fa-linkedin:hover {
-  color: #66B5D3;
-}
-.connected-social .social-media a.fa-instagram:hover {
-  color: #EC1A22;
-}
-.connected-social .social-media a.fa-tumblr:hover {
-  color: #3E5A70;
-}
-.connected-social .social-media a.fa-reddit:hover {
-  color: #FF4400;
-}
-.connected-social .social-media a.fa-flickr:hover {
-  color: #0062DD;
-}
-.connected-social .social-media a.fa-youtube:hover {
-  color: #CC181E;
-}
-.connected-social .social-media a.fa-vimeo-square:hover {
-  color: #232021;
-}
-.connected-social .social-media a.fa-vine:hover {
-  color: #00BE8F;
-}
-.connected-social .social-media a.fa-share-alt:hover {
-  color: #00BF00;
-}
-.connected-social .social-media a.fa-envelope:hover {
-  color: #999999;
-}
-.connected-social .social-media a.fa-rss:hover {
-  color: #F37D2A;
 }
 .post-footer {
   background-color: #000;
@@ -7791,7 +7855,7 @@ Site Footer
   color: #F37D2A;
 }
 .cta-overlay {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
@@ -7836,7 +7900,7 @@ Site Footer
   background-color: rgba(121, 122, 121, 0.4);
 }
 .cta-overlay.font-block {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-size: 3.6rem;
@@ -7868,7 +7932,7 @@ iframe.borderless {
   margin: 0 auto;
 }
 .page.fix-it-yourself .su-spoiler-style-default > .su-spoiler-title {
-  font-family: "Ubuntu", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
