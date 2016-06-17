@@ -114,10 +114,6 @@ function get_section_title(){
     return $section;
 }
 
-function get_menu_tree_header($id){
-    return get_post_meta($id,'_msdlab_subtitle',true);
-}
-
 function get_topmost_parent($post_id){
 	$parent_id = get_post($post_id)->post_parent;
 	if($parent_id == 0){

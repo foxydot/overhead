@@ -57,7 +57,6 @@ add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 add_action('template_redirect','msdlab_maybe_move_title');
 
     //remove_action('genesis_entry_header','genesis_do_post_title'); //move the title out of the content area
-    //add_action('msdlab_title_area','msdlab_do_section_title');
     //add_action('genesis_after_header','msdlab_do_title_area');
 
 add_action('genesis_after_header', 'genesis_do_breadcrumbs'); //to outside of the loop area
@@ -71,7 +70,6 @@ remove_action( 'genesis_before_post_content', 'genesis_post_info', 12 ); //remov
 remove_action( 'genesis_after_post_content', 'genesis_post_meta' ); //remove the meta (filed under, tags, etc.)
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 ); //remove the info (date, posted by,etc.)
 remove_action( 'genesis_entry_footer', 'genesis_post_meta'); //remove the meta (filed under, tags, etc.)
-//add_action( 'msdlab_title_area', 'msdlab_do_post_subtitle' );
 
 
     add_filter( 'edit_post_link', '__return_false' );
