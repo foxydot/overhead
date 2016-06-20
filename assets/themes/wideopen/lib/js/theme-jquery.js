@@ -4,13 +4,6 @@ jQuery(document).ready(function($) {
     $('*:nth-child(even)').addClass('even');
     $('*:nth-child(odd)').addClass('odd');
 	
-    $('img.cta').after(function(){
-        var classes = $(this).attr('class').split(' ');
-        var filtered = classes.filter(ctaClassFilter);
-        var content = $(this).attr('alt');
-        return '<div class="cta-overlay ' + filtered.join(' ') + '" style="height:' + $(this).height() + 'px;width:' + $(this).width() + 'px;"><div class="content">' + content + '</div></div>';
-    });
-	
 	$.each(['show', 'hide'], function (i, ev) {
         var el = $.fn[ev];
         $.fn[ev] = function () {
@@ -21,8 +14,8 @@ jQuery(document).ready(function($) {
 
     if($( window ).width() > 480){
         $(".site-header").sticky();
-        $("nav.nav-primary").sticky({topSpacing:140});//140
-        $(".notification-bar").sticky({topSpacing:190});//190
+        $("nav.nav-primary").sticky({topSpacing:163});//140
+        $(".notification-bar").sticky({topSpacing:213});//190
     } else {
         $("nav.nav-primary").sticky({});
     }
@@ -47,9 +40,20 @@ jQuery(document).ready(function($) {
             $(this).attr('target', '_blank');
         }
     });
+    
+    
+    
+    $('.site-inner,.sectioned-page-wrapper').imagesLoaded( function() {
+        var ctaClassFilter = function(value){
+            var rx = new RegExp('(font|bkg)-.*');
+            return rx.test(value);
+        };
+        
+        $('img.cta').after(function(){
+            var classes = $(this).attr('class').split(' ');
+            var filtered = classes.filter(ctaClassFilter);
+            var content = $(this).attr('alt');
+            return '<div class="cta-overlay ' + filtered.join(' ') + '" style="height:' + $(this).height() + 'px;width:' + $(this).width() + 'px;"><div class="content">' + content + '</div></div>';
+        });
+    });
 });
-
-var ctaClassFilter = function(value){
-    var rx = new RegExp('(font|bkg)-.*');
-    return rx.test(value);
-};

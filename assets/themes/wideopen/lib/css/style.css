@@ -6509,6 +6509,7 @@ Site Header
   text-align: right;
   clear: right;
   line-height: 1;
+  margin-top: 0.8em;
 }
 .site-header .widget-area .widget {
   display: inline-block;

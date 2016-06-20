@@ -41,7 +41,8 @@ function msdlab_add_scripts() {
         //use local
             //wp_enqueue_script('bootstrap-jquery',get_stylesheet_directory_uri().'/lib/bootstrap/js/bootstrap.min.js',array('jquery'));
         wp_enqueue_script('sticky',get_stylesheet_directory_uri().'/lib/js/jquery.sticky.js',array('jquery'));
-        wp_enqueue_script('msd-jquery',get_stylesheet_directory_uri().'/lib/js/theme-jquery.js',array('jquery','bootstrap-jquery'));
+        wp_enqueue_script('images-loaded',get_stylesheet_directory_uri().'/lib/js/imagesloaded.pkgd.min.js',array('jquery'));
+        wp_enqueue_script('msd-jquery',get_stylesheet_directory_uri().'/lib/js/theme-jquery.js',array('jquery','bootstrap-jquery','images-loaded'));
         wp_enqueue_script('nav-scripts',get_stylesheet_directory_uri().'/lib/js/nav-scripts.js',array('jquery','bootstrap-jquery'));
         wp_enqueue_script('equalHeights',get_stylesheet_directory_uri().'/lib/js/jquery.equal-height-columns.js',array('jquery'));        wp_enqueue_script('lettering',get_stylesheet_directory_uri().'/lib/js/jquery.lettering.js',array('jquery'));        
         wp_enqueue_script('lettering',get_stylesheet_directory_uri().'/lib/js/jquery.lettering.js',array('jquery'));
@@ -58,8 +59,8 @@ function msdlab_add_scripts() {
         if($is_IE){
             wp_enqueue_script('columnizr',get_stylesheet_directory_uri().'/lib/js/jquery.columnizer.js',array('jquery'));
             wp_enqueue_script('background-size',get_stylesheet_directory_uri().'/lib/js/jquery.backgroundSize.js',array('jquery'));
-            wp_enqueue_script('shim','https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js',array('jquery'));
-            wp_enqueue_script('media-queries','https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js',array('jquery'));
+            wp_enqueue_script('shim','//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js',array('jquery'));
+            wp_enqueue_script('media-queries','//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js',array('jquery'));
             wp_enqueue_script('ie-fixes',get_stylesheet_directory_uri().'/lib/js/ie-jquery.js',array('jquery'));
         }
         if(is_front_page()){
