@@ -6471,9 +6471,10 @@ Site Header
 .site-description {
   font-family: "Open Sans", "Arial Black", Calibri, sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 30px;
+  font-size: 3rem;
   line-height: 1.625;
+  line-height: 1;
   color: #000;
   font-weight: 600;
   text-align: center;
@@ -6635,6 +6636,7 @@ Site Navigation
 .nav-primary li.menu-item a {
   padding: 1.6rem 0 1.3rem;
   color: #000;
+  font-weight: 700;
 }
 .nav-primary li.menu-item.first-child {
   padding-left: 0;
@@ -7729,9 +7731,15 @@ Site Footer
   text-align: left;
   font-weight: 800;
 }
+.site-header .widget-area .widget.msd-connected .connected-text a {
+  color: #E8363A;
+}
+.site-header .widget-area .widget.msd-connected .connected-text a:hover {
+  text-decoration: none;
+}
 .site-header .widget-area .widget.msd-connected .connected-text i {
   color: #000;
-  font-size: 2em;
+  font-size: 1.6em;
   position: relative;
   top: 0.25em;
 }

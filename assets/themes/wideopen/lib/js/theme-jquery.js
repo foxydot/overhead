@@ -11,11 +11,13 @@ jQuery(document).ready(function($) {
           return el.apply(this, arguments);
         };
       });
-
+    
+    var headerheight = $(".site-header").outerHeight();
+    var navheight = $("nav.nav-primary").outerHeight();
     if($( window ).width() > 480){
         $(".site-header").sticky();
-        $("nav.nav-primary").sticky({topSpacing:163});//140
-        $(".notification-bar").sticky({topSpacing:213});//190
+        $("nav.nav-primary").sticky({topSpacing:headerheight});//140
+        $(".notification-bar").sticky({topSpacing:headerheight + navheight});//190
     } else {
         $("nav.nav-primary").sticky({});
     }
