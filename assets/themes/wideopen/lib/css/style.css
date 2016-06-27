@@ -7739,7 +7739,7 @@ Site Footer
 }
 .site-header .widget-area .widget.msd-connected .connected-text i {
   color: #000;
-  font-size: 1.6em;
+  font-size: 1.4em;
   position: relative;
   top: 0.25em;
 }
@@ -7784,6 +7784,11 @@ Site Footer
 }
 .notification-bar p {
   margin: 0;
+}
+.notification-bar a,
+.notification-bar a:hover {
+  color: #E8363A;
+  text-decoration: none;
 }
 .msd-fa.block,
 .msd-icon.block {
