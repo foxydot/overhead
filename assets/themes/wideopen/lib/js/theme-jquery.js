@@ -55,6 +55,7 @@ jQuery(document).ready(function($) {
             var classes = $(this).attr('class').split(' ');
             var filtered = classes.filter(ctaClassFilter);
             var content = $(this).attr('alt');
+            if(content == 'undefined'){content = '';}
             return '<div class="cta-overlay ' + filtered.join(' ') + '" style="height:' + $(this).height() + 'px;width:' + $(this).width() + 'px;"><div class="content">' + content + '</div></div>';
         });
     });
